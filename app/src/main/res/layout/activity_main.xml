@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:overScrollMode="never"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/agc_dummy_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/agc_margin_start"
+            android:src="@drawable/ic_agc_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideline_top"/>
+
+        <ImageView
+            android:id="@+id/vector_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin_between"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_vector_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/agc_dummy_txt" />
+
+        <TextView
+            android:id="@+id/lorem_ipsum_txt"
+            style="@style/TextStyle2"
+            android:layout_width="0dp"
+            android:layout_height="79dp"
+            android:layout_marginStart="@dimen/lorem_ipsum_start"
+            android:layout_marginTop="@dimen/lorem_ipsum_top"
+            android:layout_marginEnd="@dimen/lorem_ipsum_end"
+            android:gravity="center_horizontal"
+            android:letterSpacing="-0.02"
+            android:text="@string/lorem_ipsum"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vector_image" />
+
+        <LinearLayout
+            android:id="@+id/register_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin_between"
+            android:background="@drawable/rounded_corners"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toStartOf="@id/register_end_txt"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lorem_ipsum_txt">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/register_arrow_margin_start"
+                android:layout_marginTop="@dimen/register_arrow_margin_top"
+                android:layout_marginEnd="@dimen/register_arrow_margin_end"
+                android:layout_marginBottom="@dimen/register_arrow_margin_bottom"
+                android:src="@drawable/ic_arrow_right" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/barlow_condensed_extra_light"
+                android:letterSpacing="-0.04"
+                android:text="register"
+                android:textColor="@color/white_two"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/register_end_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/barlow_condensed_extra_light"
+            android:letterSpacing="-0.04"
+            android:text="me as a collector"
+            android:textColor="@color/black_two"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@id/register_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/register_btn"
+            app:layout_constraintTop_toTopOf="@id/register_btn" />
+
+        <LinearLayout
+            android:id="@+id/track_my_application_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/track_application_margin_top"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/register_btn">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="11dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/ic_arrow_right_cornflower" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/barlow_condensed_extra_light"
+                android:letterSpacing="-0.04"
+                android:text="track my application"
+                android:textColor="@color/corn_flower_blue"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/main_rv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/rv_margin_top"
+            tools:listitem="@layout/main_item_layout"
+            tools:itemCount="8"
+            android:overScrollMode="never"
+            app:layout_constraintTop_toBottomOf="@id/track_my_application_btn"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"/>
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="33dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="@dimen/fb_insta_margin_between"
+            android:scaleType="fitXY"
+            android:src="@drawable/facebook"
+            app:layout_constraintEnd_toStartOf="@id/instagram"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/main_rv" />
+
+        <ImageView
+            android:id="@+id/instagram"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="@dimen/instagram_margin_end"
+            android:scaleType="fitXY"
+            android:src="@drawable/instagram"
+            app:layout_constraintBottom_toBottomOf="@id/facebook"
+            app:layout_constraintEnd_toStartOf="@id/guideline_end"
+            app:layout_constraintStart_toEndOf="@id/facebook"
+            app:layout_constraintTop_toTopOf="@id/facebook" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/divider_margin_start"
+            android:layout_marginTop="@dimen/divider_margin_top"
+            android:layout_marginEnd="@dimen/divider_margin_end"
+            android:background="@color/white_one"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/facebook" />
+
+        <ImageView
+            android:id="@+id/agc_horizontal_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_agc_horizontal"
+            android:layout_marginStart="@dimen/agc_horizontal_margin_start"
+            android:layout_marginTop="@dimen/agc_horizontal_margin_top"
+            android:layout_marginEnd="@dimen/agc_horizontal_margin_end"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/divider1" />
+
+        <TextView
+            android:id="@+id/about_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/barlow_condensed_medium"
+            android:lineHeight="39sp"
+            android:text="@string/about_us"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="@dimen/bottom_option_container_margin_top"
+            android:layout_marginStart="@dimen/bottom_option_container_margin_start"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/agc_horizontal_image"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <TextView
+            android:id="@+id/team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/barlow_condensed_medium"
+            android:lineHeight="39sp"
+            android:text="@string/team"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/about_us"
+            app:layout_constraintTop_toBottomOf="@id/about_us" />
+
+        <TextView
+            android:id="@+id/reach_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/barlow_condensed_medium"
+            android:lineHeight="39sp"
+            android:text="@string/reach_us"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/team"
+            app:layout_constraintTop_toBottomOf="@id/team" />
+
+        <TextView
+            android:id="@+id/affiliations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/barlow_condensed_medium"
+            android:lineHeight="39sp"
+            android:text="@string/affiliattions"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="@dimen/bottom_option_container_margin_top"
+            android:layout_marginStart="@dimen/bottom_option_container_margin_start"
+            app:layout_constraintStart_toStartOf="@id/guideline_center"
+            app:layout_constraintTop_toBottomOf="@id/agc_horizontal_image"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <TextView
+            android:id="@+id/disclaimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/barlow_condensed_medium"
+            android:lineHeight="39sp"
+            android:text="@string/disclaimers"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/affiliations"
+            app:layout_constraintTop_toBottomOf="@id/affiliations" />
+
+        <TextView
+            android:id="@+id/privacy_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/barlow_condensed_medium"
+            android:lineHeight="39sp"
+            android:text="@string/privacy_policy"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/disclaimer"
+            app:layout_constraintTop_toBottomOf="@id/disclaimer" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/divider_margin_start"
+            android:layout_marginTop="@dimen/divider2_margin_top"
+            android:layout_marginEnd="@dimen/divider_margin_end"
+            android:background="@color/white_one"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/reach_us" />
+
+        <ImageView
+            android:id="@+id/copyright_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_copyright"
+            android:layout_marginBottom="@dimen/copyright_margin_bottom"
+            android:layout_marginTop="@dimen/copyright_margin_top"
+            app:layout_constraintTop_toBottomOf="@id/divider2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/copyright_txt"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/copyright_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/copyright_margin_between"
+            android:fontFamily="@font/barlow_condensed_light"
+            android:text="@string/content_copyright_reserved"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/copyright_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/copyright_logo"
+            app:layout_constraintTop_toTopOf="@id/copyright_logo" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.10" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.93" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.50" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.007" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

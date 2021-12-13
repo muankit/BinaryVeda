@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BinaryVeda</string>
+    <string name="lorem_ipsum_nis_used">lorem ipsum\nis used</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit</string>
+    <string name="lorem_ipsum_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</string>
+    <string name="content_copyright_reserved">Content Copyright reserved.</string>
+    <string name="privacy_policy">Privacy Policy.</string>
+    <string name="disclaimers">Disclaimers.</string>
+    <string name="affiliattions">Affiliattions.</string>
+    <string name="reach_us">Reach Us.</string>
+    <string name="team">Team.</string>
+    <string name="about_us">About Us.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

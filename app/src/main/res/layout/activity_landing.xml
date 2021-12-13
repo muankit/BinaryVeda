@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".LandingActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/agc_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_agc_abbreviated"
+                app:layout_constraintStart_toStartOf="@id/guideline_start"
+                app:layout_constraintTop_toTopOf="@id/guideline_top" />
+
+            <ImageView
+                android:id="@+id/hamburger_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/hamburger_margin_top"
+                android:layout_marginEnd="@dimen/hamburger_margin_end"
+                android:src="@drawable/ic_hamburger"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintTop_toTopOf="@id/guideline_top" />
+
+            <ImageView
+                android:id="@+id/add_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/add_icon_margin_top"
+                android:layout_marginEnd="@dimen/add_icon_margin_end"
+                android:src="@drawable/ic_add"
+                app:layout_constraintEnd_toStartOf="@id/hamburger_icon"
+                app:layout_constraintTop_toTopOf="@id/guideline_top" />
+
+            <ImageView
+                android:id="@+id/profile_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_icon_margin_top"
+                android:layout_marginEnd="@dimen/profile_icon_margin_end"
+                android:src="@drawable/profile_custom_drawable"
+                app:layout_constraintEnd_toStartOf="@id/add_icon"
+                app:layout_constraintTop_toTopOf="@id/guideline_top" />
+
+            <ImageView
+                android:id="@+id/user_avatar"
+                android:layout_width="127dp"
+                android:layout_height="127dp"
+                android:layout_marginStart="@dimen/user_avatar_margin_start"
+                android:layout_marginTop="@dimen/user_avatar_margin_top"
+                android:layout_marginEnd="@dimen/user_avatar_margin_end"
+                android:src="@drawable/ic_avatar"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintStart_toStartOf="@id/guideline_start"
+                app:layout_constraintTop_toBottomOf="@id/agc_logo" />
+
+            <ImageView
+                android:id="@+id/upload_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/upload_img_margin_end"
+                android:src="@drawable/ic_upload"
+                app:layout_constraintBottom_toTopOf="@id/upload_txt"
+                app:layout_constraintEnd_toStartOf="@id/user_avatar"
+                app:layout_constraintTop_toTopOf="@id/user_avatar"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/upload_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/barlow_condensed_light"
+                android:text="Upload"
+                android:textColor="@color/corn_flower_blue_two"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@id/user_avatar"
+                app:layout_constraintEnd_toEndOf="@id/upload_img"
+                app:layout_constraintStart_toStartOf="@id/upload_img"
+                app:layout_constraintTop_toBottomOf="@id/upload_img" />
+
+            <ImageView
+                android:id="@+id/edit_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/edit_img_margin_end"
+                android:src="@drawable/ic_edit"
+                app:layout_constraintBottom_toTopOf="@id/edit_txt"
+                app:layout_constraintStart_toEndOf="@id/user_avatar"
+                app:layout_constraintTop_toTopOf="@id/user_avatar"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/edit_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/barlow_condensed_light"
+                android:text="Edit"
+                android:textColor="@color/corn_flower_blue_two"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@id/user_avatar"
+                app:layout_constraintEnd_toEndOf="@id/edit_img"
+                app:layout_constraintStart_toStartOf="@id/edit_img"
+                app:layout_constraintTop_toBottomOf="@id/edit_img" />
+
+            <TextView
+                android:id="@+id/user_name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/barlow_condensed_extra_light"
+                android:letterSpacing="0"
+                android:text="john.doe"
+                android:textColor="@color/black"
+                android:textSize="36sp"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintStart_toStartOf="@id/guideline_start"
+                app:layout_constraintTop_toBottomOf="@id/user_avatar" />
+
+
+            <TextView
+                android:id="@+id/dashboard_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="@dimen/dashboard_txt_margin_top"
+                android:fontFamily="@font/barlow_condensed_light"
+                android:text="My dashboard"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/guideline_start"
+                app:layout_constraintTop_toBottomOf="@id/user_name_txt" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/switch_margin_top"
+                android:checked="true"
+                android:thumb="@drawable/switch_track"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintTop_toBottomOf="@id/user_name_txt"
+                app:track="@drawable/switch_bg" />
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/divider_one_margin_top"
+                android:background="@color/white_one"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintStart_toStartOf="@id/guideline_start"
+                app:layout_constraintTop_toBottomOf="@id/dashboard_txt" />
+
+            <TextView
+                android:id="@+id/follower_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/follower_margin_top"
+                android:fontFamily="@font/barlow_condensed_light"
+                android:letterSpacing="0"
+                android:text="2.3K"
+                android:textColor="@color/black"
+                android:textSize="29sp"
+                app:layout_constraintEnd_toStartOf="@id/artwork_count"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divider1" />
+
+            <TextView
+                android:id="@+id/follower_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/barlow_condensed_light"
+                android:letterSpacing="0"
+                android:text="Followers"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@id/follower_count"
+                app:layout_constraintStart_toStartOf="@id/follower_count"
+                app:layout_constraintTop_toBottomOf="@id/follower_count" />
+
+            <TextView
+                android:id="@+id/artwork_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/barlow_condensed_light"
+                android:letterSpacing="0"
+                android:text="50"
+                android:textColor="@color/black"
+                android:textSize="29sp"
+                app:layout_constraintBottom_toBottomOf="@id/follower_count"
+                app:layout_constraintEnd_toStartOf="@id/exhibitions_count"
+                app:layout_constraintStart_toEndOf="@id/follower_count"
+                app:layout_constraintTop_toTopOf="@id/follower_count" />
+
+            <TextView
+                android:id="@+id/artwork_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/barlow_condensed_light"
+                android:letterSpacing="0"
+                android:text="Artworks"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@id/artwork_count"
+                app:layout_constraintStart_toStartOf="@id/artwork_count"
+                app:layout_constraintTop_toBottomOf="@id/artwork_count" />
+
+            <TextView
+                android:id="@+id/exhibitions_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/barlow_condensed_light"
+                android:letterSpacing="0"
+                android:text="21"
+                android:textColor="@color/black"
+                android:textSize="29sp"
+                app:layout_constraintBottom_toBottomOf="@id/artwork_count"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/artwork_count"
+                app:layout_constraintTop_toTopOf="@id/artwork_count" />
+
+            <TextView
+                android:id="@+id/exhibitions_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/barlow_condensed_light"
+                android:letterSpacing="0"
+                android:text="Exhibitions"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@id/exhibitions_count"
+                app:layout_constraintStart_toStartOf="@id/exhibitions_count"
+                app:layout_constraintTop_toBottomOf="@id/exhibitions_count" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/divider_two_margin_top"
+                android:background="@color/white_one"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintStart_toStartOf="@id/guideline_start"
+                app:layout_constraintTop_toBottomOf="@id/follower_txt" />
+
+
+            <TextView
+                android:id="@+id/heart_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="@dimen/heart_margin_top"
+                android:layout_marginEnd="@dimen/heart_share_cursor_margin_between"
+                android:fontFamily="@font/barlow_extra_light"
+                android:letterSpacing="0"
+                android:text="120"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@id/cursor_count"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="@id/guideline_start"
+                app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+            <ImageView
+                android:id="@+id/heart_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="7dp"
+                android:src="@drawable/ic_heart"
+                app:layout_constraintBottom_toBottomOf="@id/heart_count"
+                app:layout_constraintEnd_toStartOf="@id/heart_count"
+                app:layout_constraintTop_toTopOf="@id/heart_count" />
+
+            <TextView
+                android:id="@+id/cursor_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/heart_share_cursor_margin_between"
+                android:fontFamily="@font/barlow_extra_light"
+                android:letterSpacing="0"
+                android:text="43K"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@id/heart_count"
+                app:layout_constraintEnd_toStartOf="@id/share_count"
+                app:layout_constraintStart_toEndOf="@id/heart_count"
+                app:layout_constraintTop_toTopOf="@id/heart_count" />
+
+            <ImageView
+                android:id="@+id/cursor_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="7dp"
+                android:src="@drawable/ic_cursor"
+                app:layout_constraintBottom_toBottomOf="@id/cursor_count"
+                app:layout_constraintEnd_toStartOf="@id/cursor_count"
+                app:layout_constraintTop_toTopOf="@id/cursor_count" />
+
+            <TextView
+                android:id="@+id/share_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/barlow_extra_light"
+                android:letterSpacing="0"
+                android:text="2.3K"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@id/cursor_count"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintStart_toEndOf="@id/cursor_count"
+                app:layout_constraintTop_toTopOf="@id/cursor_count" />
+
+            <ImageView
+                android:id="@+id/share_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="7dp"
+                android:src="@drawable/ic_share"
+                app:layout_constraintBottom_toBottomOf="@id/share_count"
+                app:layout_constraintEnd_toStartOf="@id/share_count"
+                app:layout_constraintTop_toTopOf="@id/share_count" />
+
+            <LinearLayout
+                android:id="@+id/pallette_container"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pallette_margin_top"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintStart_toStartOf="@id/guideline_start"
+                app:layout_constraintTop_toBottomOf="@id/heart_count">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:background="@color/medium_purple"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/barlow_condensed_medium"
+                        android:letterSpacing="0"
+                        android:text="pallette"
+                        android:textColor="@color/white_two"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:background="@color/cherry" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:background="@color/red" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:background="@color/tomato" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:background="@color/yellow_orange" />
+
+            </LinearLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tab_layout_margin_top"
+                android:scrollbars="none"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintStart_toStartOf="@id/guideline_start"
+                app:layout_constraintTop_toBottomOf="@id/pallette_container"
+                app:tabIconTint="@color/black"
+                app:tabIndicatorHeight="1dp"
+                app:tabIndicatorColor="@color/yellow_orange"
+                app:tabIndicatorFullWidth="false"
+                app:tabIndicatorGravity="bottom"
+                app:tabSelectedTextColor="@color/black"
+                app:tabTextAppearance="@style/TextAppearance.MdcTypographyStyles.Subtitle2" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/view_pager_margin_top"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/guideline_end"
+                app:layout_constraintStart_toStartOf="@id/guideline_start"
+                app:layout_constraintTop_toBottomOf="@id/tab_layout" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.955" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.024" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.50" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

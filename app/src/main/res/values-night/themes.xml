@@ -1,0 +1,94 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BinaryVeda" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="TextStyle8">
+        <item name="fontFamily">@font/barlow_condensed_extra_light</item>
+        <!--        <item name="android:letterSpacing">-1.32</item>-->
+        <item name="android:textSize">36pt</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle3">
+        <item name="fontFamily">@font/barlow_condensed_extra_light</item>
+        <!--        <item name="android:letterSpacing">-1.32</item>-->
+        <item name="android:textSize">32pt</item>
+        <item name="android:textColor">@color/white_two</item>
+    </style>
+
+    <style name="TextStyle6">
+        <item name="fontFamily">@font/barlow_condensed_extra_light</item>
+        <!--        <item name="android:letterSpacing">-1.17</item>-->
+        <item name="android:textSize">32pt</item>
+        <item name="android:textColor">@color/black_two</item>
+    </style>
+
+    <style name="TextStyle4">
+        <item name="fontFamily">@font/barlow_condensed_light</item>
+        <!--        <item name="android:letterSpacing">0</item>-->
+        <item name="android:textSize">28pt</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle7">
+        <item name="fontFamily">@font/barlow_condensed_extra_light</item>
+        <!--        <item name="android:letterSpacing">-0.88</item>-->
+        <item name="android:textSize">24pt</item>
+        <item name="android:textColor">@color/corn_flower_blue</item>
+    </style>
+
+    <style name="TextStyle5">
+        <item name="fontFamily">@font/barlow_condensed_medium</item>
+        <!--        <item name="android:letterSpacing">0</item>-->
+        <item name="android:textSize">16pt</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle9">
+        <item name="fontFamily">@font/barlow_condensed_light</item>
+        <!--        <item name="android:letterSpacing">0</item>-->
+        <item name="android:textSize">16pt</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle10">
+        <item name="fontFamily">@font/barlow_extra_light</item>
+        <!--        <item name="android:letterSpacing">0</item>-->
+        <item name="android:textSize">16pt</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle2">
+        <item name="fontFamily">@font/barlow_extra_light</item>
+        <!--        <item name="android:letterSpacing">-0.6</item>-->
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyle">
+        <item name="fontFamily">@font/barlow_condensed_light</item>
+        <!--        <item name="android:letterSpacing">0</item>-->
+        <item name="android:textSize">14pt</item>
+        <item name="android:textColor">@color/corn_flower_blue_two</item>
+    </style>
+
+    <style name="TextAppearance.MdcTypographyStyles.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/barlow_medium</item>
+        <item name="android:textColor">@color/white_two</item>
+        <item name="android:fontFamily">@font/barlow_medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

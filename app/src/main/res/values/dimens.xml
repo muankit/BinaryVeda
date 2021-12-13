@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="agc_margin_start">24dp</dimen>
+    <dimen name="small_margin_between">7dp</dimen>
+
+    <dimen name="register_btn_margin_start">54dp</dimen>
+    <dimen name="register_btn_padding_start">31.2dp</dimen>
+    <dimen name="register_btn_padding_end">5.8dp</dimen>
+    <dimen name="register_btn_padding_top">2.8dp</dimen>
+    <dimen name="register_btn_padding_bottom">12.2dp</dimen>
+
+    <dimen name="register_arrow_margin_start">10dp</dimen>
+    <dimen name="register_arrow_margin_top">12dp</dimen>
+    <dimen name="register_arrow_margin_bottom">13dp</dimen>
+    <dimen name="register_arrow_margin_end">1.2dp</dimen>
+
+    <dimen name="lorem_ipsum_start">36dp</dimen>
+    <dimen name="lorem_ipsum_top">33dp</dimen>
+    <dimen name="lorem_ipsum_end">50dp</dimen>
+
+    <dimen name="track_application_margin_top">33dp</dimen>
+
+    <dimen name="rv_margin_top">68.4dp</dimen>
+
+    <!--  image dimensions  -->
+    <dimen name="image_margin_start">4dp</dimen>
+    <dimen name="image_margin_top">0dp</dimen>
+
+    <dimen name="image_title_margin_start">1.2dp</dimen>
+    <dimen name="image_title_margin_top">28.8dp</dimen>
+
+    <dimen name="image_subtext_margin_start">0dp</dimen>
+    <dimen name="image_subtext_margin_end">0dp</dimen>
+    <dimen name="image_subtext_margin_top">26dp</dimen>
+
+    <dimen name="instagram_margin_end">43dp</dimen>
+    <dimen name="fb_insta_margin_between">10dp</dimen>
+
+    <dimen name="divider_margin_start">-15dp</dimen>
+    <dimen name="divider_margin_end">-1dp</dimen>
+    <dimen name="divider_margin_top">22dp</dimen>
+
+    <dimen name="divider2_margin_top">32dp</dimen>
+
+    <dimen name="agc_horizontal_margin_start">24dp</dimen>
+    <dimen name="agc_horizontal_margin_top">23dp</dimen>
+    <dimen name="agc_horizontal_margin_end">31.3dp</dimen>
+
+    <dimen name="bottom_option_container_margin_start">11dp</dimen>
+    <dimen name="bottom_option_container_margin_top">18dp</dimen>
+
+    <dimen name="copyright_margin_between">5.1dp</dimen>
+    <dimen name="copyright_margin_bottom">49dp</dimen>
+    <dimen name="copyright_margin_top">15dp</dimen>
+
+    <dimen name="agc_abbreviated_margin_start">6dp</dimen>
+
+    <dimen name="hamburger_margin_end">8.4dp</dimen>
+    <dimen name="hamburger_margin_top">8dp</dimen>
+
+    <dimen name="add_icon_margin_end">37.1dp</dimen>
+    <dimen name="add_icon_margin_top">4.7dp</dimen>
+
+    <dimen name="profile_icon_margin_end">35dp</dimen>
+    <dimen name="profile_icon_margin_top">0dp</dimen>
+
+    <dimen name="user_avatar_margin_top">33dp</dimen>
+    <dimen name="user_avatar_margin_start">107dp</dimen>
+    <dimen name="user_avatar_margin_end">108dp</dimen>
+
+    <dimen name="upload_img_margin_end">44dp</dimen>
+    <dimen name="edit_img_margin_end">44dp</dimen>
+
+    <dimen name="user_name_margin_top">7dp</dimen>
+
+    <dimen name="dashboard_txt_margin_top">25dp</dimen>
+
+    <dimen name="switch_margin_top">23dp</dimen>
+
+    <dimen name="divider_one_margin_top">15dp</dimen>
+
+    <dimen name="follower_margin_top">9dp</dimen>
+
+    <dimen name="divider_two_margin_top">20dp</dimen>
+
+    <dimen name="heart_margin_top">20dp</dimen>
+
+    <dimen name="heart_share_cursor_margin_between">45dp</dimen>
+
+    <dimen name="pallette_margin_top">19dp</dimen>
+
+    <dimen name="tab_layout_margin_top">20dp</dimen>
+
+    <dimen name="view_pager_margin_top">21dp</dimen>
+
+    <dimen name="item_margin">10dp</dimen>
+
+</resources>
